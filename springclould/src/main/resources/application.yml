@@ -1,0 +1,25 @@
+server:
+  port: 8001
+
+my:
+  name: gz
+
+management:
+  server:
+    port: 9001
+    address: 127.0.0.1
+  security:
+    enabled: false
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.14.191:3306/spring-clould?useUnicode=true&characterEncoding=utf8&characterSetResult=utf8
+    username: root
+    password: rootroot
+  jpa:
+#  以下两句会 drop table 并 create table
+#    hibernate:
+#      ddl-auto: create
+    show-sql: true
