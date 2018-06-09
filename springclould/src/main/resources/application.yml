@@ -24,7 +24,7 @@ spring:
 #      ddl-auto: create
     show-sql: true
   redis:
-    host: localhost
+    host: 192.168.14.191
     port: 6379
     password:
     database: 1
